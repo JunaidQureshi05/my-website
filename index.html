@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juned Ahmad</title>
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="showcase">
@@ -29,14 +30,14 @@
     </div>
 
     <div class="intro">
-      <p class="sm">About Me</p>
+      <p class="sm" data-aos="fade-right">About Me</p>
       <hr />
-      <h1>
+      <h1 data-aos="fade-left" data-aos-delay="500">
         I am a Software Engineer 💻 (2021) from
         <br />
         <i class="fas fa-map-marker-alt"></i> Nagpur,India.
       </h1>
-      <p class="lead">
+      <p class="lead" data-aos="fade-right" data-aos-delay="800">
         I love to code. I have good problem solving skills 🤔 & deep knowledge
         of Data Structue and Algorithms 📊.
         <br />
@@ -44,10 +45,10 @@
       </p>
     </div>
     <div class="skills">
-      <p class="sm">Skills</p>
+      <p class="sm" data-aos="fade-left">Skills</p>
       <hr />
       <div class="lists">
-        <div class="list">
+        <div class="list" data-aos="fade-up">
           <h1>Frontend</h1>
           <ul>
             <li>HTML</li>
@@ -56,7 +57,7 @@
             <li>React</li>
           </ul>
         </div>
-        <div class="list">
+        <div class="list" data-aos="fade-up" data-aos-delay="500">
           <h1>Backend</h1>
           <ul>
             <li>NodeJS</li>
@@ -65,7 +66,7 @@
             <li>MongoDB</li>
           </ul>
         </div>
-        <div class="list">
+        <div class="list" data-aos="fade-up" data-aos-delay="1000">
           <h1>Languages</h1>
           <ul>
             <li>Java</li>
@@ -74,11 +75,63 @@
         </div>
       </div>
     </div>
-    <div class="projects"></div>
+    <div class="projects">
+      <p class="sm" data-aos="fade-left">Projects</p>
+      <hr />
+      <div class="project-list">
+        <div class="project" data-aos="fade-up" data-aos-delay="500">
+          <img
+            src=" https://images.pexels.com/photos/34577/pexels-photo.jpg?cs=srgb&dl=pexels-negative-space-34577.jpg&fm=jpg"
+            alt=""
+          />
+          <p class="title">E-Commerce Website</p>
+          <ul class="skills-used">
+            <li>React</li>
+          </ul>
+          <a href="#" class="btn">See Project</a>
+        </div>
+        <div class="project" data-aos="fade-up" data-aos-delay="800">
+          <img
+            src=" https://images.pexels.com/photos/2422265/pexels-photo-2422265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt=""
+          />
+          <p class="title">Yelp Camp</p>
+          <ul class="skills-used">
+            <li>Bootstrap</li>
+            <li>Node JS</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+          </ul>
+          <a href="#" class="btn">See Project</a>
+        </div>
+        <div class="project" data-aos="fade-up" data-aos-delay="1100">
+          <img
+            src=" https://images.pexels.com/photos/277667/pexels-photo-277667.jpeg?cs=srgb&dl=pexels-pixabay-277667.jpg&fm=jpg"
+            alt=""
+          />
+          <p class="title">House Market Place</p>
+          <ul class="skills-used">
+            <li>React</li>
+            <li>Firebase</li>
+          </ul>
+          <a href="#" class="btn">See Project</a>
+        </div>
+      </div>
+    </div>
     <script src="./app.js"></script>
     <script
       src="https://kit.fontawesome.com/46ec5bb33e.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 100,
+        duration: 1000,
+        once: false,
+        mirror: false,
+      });
+    </script>
   </body>
 </html>

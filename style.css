@@ -81,7 +81,8 @@ navbar {
   text-align: center;
 }
 .intro hr,
-.skills hr {
+.skills hr,
+.projects hr {
   width: 70px;
   height: 10px;
   border-radius: 10px;
@@ -144,7 +145,8 @@ p.sm {
 }
 
 .projects {
-  background-color: #e7eeed;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 }
 
 /* width */
@@ -161,4 +163,61 @@ p.sm {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--primary-color);
+}
+
+.projects {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.projects p {
+  margin-top: 20px;
+}
+
+.project {
+  background-color: var(--secondary-color);
+  color: black;
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project img {
+  width: 100%;
+  height: 150px;
+}
+
+.btn {
+  background-color: #9c4d3b;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.project-list {
+  display: flex;
+}
+
+ul.skills-used {
+  font-size: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+
+ul.skills-used li {
+  background-color: black;
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
 }
