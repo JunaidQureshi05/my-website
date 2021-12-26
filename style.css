@@ -36,6 +36,9 @@ ul.links {
   justify-content: space-between;
 }
 
+.showcase {
+  min-height: 100vh;
+}
 navbar {
   display: flex;
   color: white;
@@ -52,10 +55,12 @@ navbar {
 }
 .brand {
   text-align: center;
-  font-size: 150px;
+  font-size: 100px;
   color: var(--primary-color);
   margin-top: 150px;
-  margin-bottom: 250px;
+}
+.txt-type > .txt {
+  border-right: 0.2rem solid white;
 }
 .intro,
 .skills,
