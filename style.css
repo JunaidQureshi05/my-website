@@ -9,6 +9,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--secondary-color);
   font-family: 'Montserrat', sans-serif;
@@ -35,7 +39,45 @@ ul.links {
   display: flex;
   justify-content: space-between;
 }
+.modal {
+  width: 95vw;
+  height: 95vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  margin: 0;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: visibility 0s, opacity 0.5s linear;
+}
 
+p.h1 {
+  font-size: 70px;
+}
+p.h2 {
+  font-size: 20px;
+}
+.modal i.fa-times {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 50px;
+  color: #fa613f;
+}
+
+.modal i {
+  font-size: 40px;
+  margin: 20px;
+}
+.social {
+  display: flex;
+}
 .showcase {
   min-height: 100vh;
 }

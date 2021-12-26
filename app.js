@@ -63,3 +63,16 @@ function init() {
   // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
+
+const closeBtn = document.getElementById('close');
+const modal = document.getElementById('modal');
+closeBtn.addEventListener('click', () => {
+  console.log('close btn clicked');
+  modal.style.visibility = 'hidden';
+  modal.style.opacity = '0';
+});
+const openBtn = document.getElementById('open');
+openBtn.addEventListener('click', () => {
+  modal.style.visibility = 'visible';
+  modal.style.opacity = '1';
+});

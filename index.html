@@ -9,16 +9,25 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="modal" id="modal">
+      <p class="h2">Contact Me</p>
+      <p class="h1">Junaid.562000@gmail.com</p>
+      <i class="fas fa-times" id="close"></i>
+      <div class="social">
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-github"></i>
+      </div>
+    </div>
     <div class="showcase">
       <navbar>
         <div class="logo">Juned Ahmad</div>
         <ul class="links">
           <li class="selected"><a href="#">Intro</a></li>
-          <li><a href="#">Skill</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#">Education</a></li>
         </ul>
-        <div class="contact"><a href="#">Contact</a></div>
+        <div class="contact" id="open"><a href="#">Contact</a></div>
       </navbar>
       <h1 class="brand">
         <span
@@ -44,7 +53,7 @@
         I code in Python 3 🐍 & Java ☕.
       </p>
     </div>
-    <div class="skills">
+    <div class="skills" id="skills">
       <p class="sm" data-aos="fade-left">Skills</p>
       <hr />
       <div class="lists">
@@ -75,7 +84,7 @@
         </div>
       </div>
     </div>
-    <div class="projects">
+    <div class="projects" id="projects">
       <p class="sm" data-aos="fade-left">Projects</p>
       <hr />
       <div class="project-list">
